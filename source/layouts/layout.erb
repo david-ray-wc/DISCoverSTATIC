@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "DISCoverBEST" %></title>
+
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+    <%= stylesheet_link_tag :site %>
+    <%= javascript_include_tag :all %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-primary hidden-xs" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand text-warning" href="/"><span class="brand-left">DISCover</span><span class="brand-right">BEST</span></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              <a class="navbar-link" href="/">Home</a>
+            </li>
+            <li>
+              <a class="navbar-link" href="/search">Search</a>
+            </li>
+            <li>
+              <a class="navbar-link" href="/about">About</a>
+            </li>
+            <li>
+              <a class="navbar-link" href="/browse">Browse</a>
+            </li>
+            <li>
+              <a class="navbar-link" href="/contact">Contact</a>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+          </form>
+
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+
+
+    <div class="hidden-sm visible-xs">
+      <nav class="navbar navbar-mobile navbar-static-top">
+        <div class="container">
+          <div id="navbar">
+            <ul class="list-inline mobile-buttons">
+              <!-- home button -->
+              <li><a class="navbar-brand text-warning" href="/"><span class="brand-left">DISCover</span><span class="brand-right">BEST</span></a></li>
+
+              <!-- search button -->
+              <li><a href="/search"><i class="fa fa-search"></i></a></li>
+              <!-- about button -->
+              <li class="active"><a href="./"><i class="fa fa-info-circle"></i></a></li>
+              <!-- top charts button -->
+              <li><a href="/browse"><i class="fa fa-list"></i></a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </div>
+    <!-- begin user nav -->
+    <div class="container text-right user-nav">
+        <a class="username" href="#">daplgray</a>
+        <a class="sign-out" href="#">Sign Out</a>
+    </div>
+
+    <%= yield %>
+
+    <footer class="footer">
+      <div class="container">
+        <h4>Connect: <a href="/">facebook</a> | <a href="https://twitter.com/discoverbest_">twitter</a> | <a href="/">connect@discoverbest.com</a></h4>
+        <h4 class="text-right">&copy; DISCoverBEST 2016</h4>
+      </div>
+    </footer>
+  </body>
+</html>
