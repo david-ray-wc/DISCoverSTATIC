@@ -47,6 +47,7 @@ p {
   font-size: 1.2em;
 }
 
+
 a {
   color: $brand-primary;
   font-family: 'Lato', sans-serif;
@@ -96,6 +97,9 @@ label {
   .btn-primary {
     font-family: $font-family-sans-serif;
     background-color: $brand-primary;
+    &:hover {
+      background-color: $brand-primary;
+    }
   }
 }
 legend {
@@ -165,14 +169,14 @@ legend {
   background-color: $brand-lightgray;
     .navbar-brand {
       padding-top: 3em;
-      font-size: 1em;
+      font-size: 1.125em;
     .brand-left {
       color: $brand-primary;
-      letter-spacing: .04em;
+      letter-spacing: .05em;
     }
     .brand-right {
       color: $brand-warning;
-      letter-spacing: .04em;
+      letter-spacing: .05em;
     }
   }
   .fa {
@@ -194,7 +198,6 @@ legend {
 
 //        User Nav
 .user-nav {
-  margin-bottom: -2em;
   a {
     font-size: 1.5em;
     margin-right: 1em;
@@ -210,7 +213,7 @@ legend {
 @media (max-width: 768px) {
   .user-nav {
     a {
-      font-size: .8em;
+      font-size: 1em;
     }
   }
 }
@@ -313,15 +316,20 @@ hr {
   font-weight: 400;
   &:hover {
     background-color: $brand-lightgray;
+    color: $brand-darkgray;
   }
 }
 .following {
   background-color: $brand-primary;
   color: $brand-lightgray;
+  &:hover {
+    background-color: $brand-primary;
+    color: $brand-lightgray;
+  }
 }
 
 .review-body {
-  line-height: 1.5em;
+  line-height: 1.75em;
 }
 .like-btn {
   color: $brand-darkhover;
@@ -556,24 +564,24 @@ h1 .active {
 
 @media (max-width: 768px) {     //Media Responsive
   h1 {                     //General
-    font-size: 1.2em;
+    font-size: 1.35em;
   }
   h2 {
-    font-size: 1.2em;
+    font-size: 1.35em;
   }
   h3 {
     font-size: 1em;
   }
   .artist-name {
-    font-size: .8em;
+    font-size: 1em;
     padding-bottom: 0px;
   }
   .album-title {
-    font-size: .8em;
+    font-size: 1em;
   }
   .album-comp {           //Album Component
     padding: .5em;
-    line-height: .8em;
+    line-height: 1.25em;
     margin-right: 0em;
     margin-bottom: .5em;
     figure {
@@ -581,7 +589,7 @@ h1 .active {
     }
   }
   .score {
-    font-size: .8em;
+    font-size: 1em;
     .score-number {
       font-size: 1.5em;
     }
@@ -592,7 +600,7 @@ h1 .active {
     }
   }
   .review-title {
-    font-size: 1em;
+    font-size: 1.2em;
   }
   .user-inline-comp {
     .user-pic {
@@ -606,25 +614,29 @@ h1 .active {
     }
   }
   .review-body {
-    font-size: 1em;
+    font-size: 1.125em;
+    line-height: 1.5em;
   }
   .like-btn {
-    font-size: 1em;
+    font-size: 1.125em;
   }
   .review-controls {
-    font-size: 1em;
+    font-size: 1.2em;
   }
   .btn-review {             //Album Component
-    font-size: .8em;
+    font-size: 1em;
   }
   .btn-listen {
-    font-size: .8em;
+    font-size: 1em;
   }
   .artist-page-comp {         //Artist Page
-    line-height: .8em;
+    line-height: 1em;
+    figcaption {
+      margin-left: -1em;
+    }
     .album-btns {
       margin-top: 0px;
-      font-size: 1em;
+      font-size: 1.25em;
     }
     .artist-name {
       font-size: 1em;
