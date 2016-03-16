@@ -74,6 +74,12 @@ a.artist-title {
   }
 }
 
+.btn-primary {
+  &:hover {
+    background-color: $brand-primary;
+  }
+}
+
 .btn-light {
   background-color: $brand-lightgray;
   font-size: 1.2em;
