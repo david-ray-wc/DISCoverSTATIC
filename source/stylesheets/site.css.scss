@@ -25,8 +25,11 @@ $font-family-sans-serif:  "Lato", Helvetica, Arial, sans-serif !default;
 }
 
 h1 {
-  //  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300;
+  strong {
+    font-weight: 400;
+  }
 }
 h2 {
   font-family: 'Lato', sans-serif;
@@ -470,6 +473,10 @@ hr {
                             Search Page Mobile
 */
 
+.search-page {
+  min-height: 75vh;
+}
+
 .search-comp {
   a {
     font-weight: 400;
@@ -534,7 +541,7 @@ h1 .active {
   p {
     font-family: $font-family-sans-serif;
     font-weight: 400;
-    line-height: .8em;
+    line-height: .05em;
     font-size: 1.5em;
     margin-bottom: 0;
     a {
@@ -725,6 +732,12 @@ h1 .active {
     }
     .score {
       font-size: .8em;
+    }
+  }
+  .browse-user-comp {
+    p {
+      font-size: .8em;
+      line-height: 1.2em;
     }
   }
 }
