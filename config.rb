@@ -35,6 +35,11 @@ end
 #   end
 # end
 
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-75239651-1'
+end
+
+
 # Build-specific configuration
 configure :build do
   # Minify CSS on build
