@@ -754,8 +754,11 @@ h1 .active {
   }
   .browse-user-comp {
     p {
-      font-size: .8em;
+      font-size: .75em;
       line-height: 1.2em;
+    }
+    img {
+      width: 130%;
     }
   }
 }
